@@ -1,0 +1,39 @@
+h2 {
+    font-size: 50px;
+    margin-bottom: 58px;
+    margin-top: 120px;
+}
+
+.info {
+    display: flex;
+
+    @include breakpoint($mobile-bp){
+        flex-wrap: wrap;
+    }
+    h3 {
+        font-size: 25px;
+        margin-bottom: 19px;
+    }
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+.info-left {
+    margin-right: 36px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 67px;
+    img {
+    &:hover {
+        transform: scale(1.2);
+        transition-duration: 2.5s;
+    }
+}
+}
+

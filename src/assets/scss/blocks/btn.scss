@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 17px;
+    font-weight: inherit;
+    font-family: $ff;
+    line-height: 1.1;
+    color: $color;
+    background: $tomato ;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    padding: 1.14em 2.1em;
+    border-radius: 3em;
+    transition: background-color .2s linear;
+
+    &--rounded {
+        border-radius: 5px;
+    }
+}

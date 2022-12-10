@@ -1,0 +1,97 @@
+.form {
+    &--register {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
+
+.form__group {
+    font-size: 17px;
+    font-weight: $fw700;
+    margin-bottom: 15px;
+    position: relative;
+    font-family: "Anton", sans-serif;
+
+    &--mb{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+.textarea {
+    display: block;
+    position: relative;
+    font-family: inherit;
+    border: none;
+    margin-top: 20px;
+    font-size: inherit;
+    outline: none;
+    background: transparent;
+    color: $color;
+    resize: none;
+    overflow: hidden;
+    width: 100%;
+    &::placeholder {
+        font-weight:inherit;
+        color: $color;
+    }
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.5s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.5s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.5s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.5s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.5s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.5s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.5s ease;}
+
+}
+.form__control {
+    display: block;
+    width: 100%;
+    padding: 5px 0 7.5px;
+    outline: none;
+    background: none;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+
+    font-family: inherit;
+
+    font-size: inherit;
+    color: $color;
+    border-bottom: 1px solid $tomato;
+
+    &::placeholder {
+        letter-spacing: 1px;
+        font-weight:700;
+        color: $color;
+    }
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.5s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.5s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.5s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.5s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.5s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.5s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.5s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.5s ease;}
+
+
+    &:focus + .form__line {
+        width: 100%;
+    }
+}
+
+.form__line {
+    width: 0;
+    height: 1px;
+    background-color: blueviolet;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width 2s linear;
+}
+
+.form__footer {
+    text-align: center;
+}

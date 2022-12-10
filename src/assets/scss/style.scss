@@ -1,0 +1,46 @@
+@import "./vars.scss";
+@import "./mixins.scss";
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: $color;
+    font-family: "Anton", sans-serif;
+    color: black;
+    font-size: 20px;
+}
+body {
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+ul li {
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+// .wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+// }
+/*Fonts*/
+
+@import "./blocks/header.scss";
+@import "./blocks/container.scss";
+@import "./blocks/post_info.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/form.scss";
+@import "./blocks/btn.scss";

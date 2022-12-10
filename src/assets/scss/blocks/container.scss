@@ -1,0 +1,14 @@
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 400px;
+
+    @include breakpoint($mobile-bp){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include breakpoint($tablet-bp) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
